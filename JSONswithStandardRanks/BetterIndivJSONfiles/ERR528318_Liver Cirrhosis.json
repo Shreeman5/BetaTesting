@@ -1,0 +1,1066 @@
+{
+    "name": "sk__Bacteria__2",
+    "children": [
+        {
+            "name": "p__Bacteroidota__976",
+            "children": [
+                {
+                    "name": "c__Bacteroidia__200643",
+                    "children": [
+                        {
+                            "name": "o__Bacteroidales__171549",
+                            "children": [
+                                {
+                                    "name": "f__Bacteroidaceae__815",
+                                    "children": [
+                                        {
+                                            "name": "g__Bacteroides__816",
+                                            "children": [
+                                                {
+                                                    "name": "s__Bacteroides sp. AM16-15__2292939",
+                                                    "children": [
+                                                        {
+                                                            "name": "Bacteroides sp. AM16-15?species?2292939",
+                                                            "value": 0.090383
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Bacteroides?genus?816",
+                                                    "value": 0.001453
+                                                },
+                                                {
+                                                    "name": "s__Bacteroides xylanisolvens__371601",
+                                                    "children": [
+                                                        {
+                                                            "name": "Bacteroides xylanisolvens CL03T12C04?strain?997892",
+                                                            "value": 0.022037
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Bacteroides stercoris__46506",
+                                                    "children": [
+                                                        {
+                                                            "name": "Bacteroides stercoris ATCC 43183?strain?449673",
+                                                            "value": 0.044787
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Bacteroides thetaiotaomicron__818",
+                                                    "children": [
+                                                        {
+                                                            "name": "Bacteroides thetaiotaomicron?species?818",
+                                                            "value": 0.004257
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Bacteroides faecis__674529",
+                                                    "children": [
+                                                        {
+                                                            "name": "Bacteroides faecis MAJ27?strain?1077285",
+                                                            "value": 0.034796
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Bacteroides fragilis__817",
+                                                    "children": [
+                                                        {
+                                                            "name": "Bacteroides fragilis str. 3397 T10?strain?1339284",
+                                                            "value": 0.00951
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Bacteroides caccae__47678",
+                                                    "children": [
+                                                        {
+                                                            "name": "Bacteroides caccae?species?47678",
+                                                            "value": 0.001228
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "g__Phocaeicola__909656",
+                                            "children": [
+                                                {
+                                                    "name": "s__Phocaeicola massiliensis__204516",
+                                                    "children": [
+                                                        {
+                                                            "name": "Phocaeicola massiliensis B84634 = Timone 84634 = DSM 17679 = JCM 13223?strain?1121098",
+                                                            "value": 0.028787
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Phocaeicola vulgatus__821",
+                                                    "children": [
+                                                        {
+                                                            "name": "Phocaeicola vulgatus ATCC 8482?strain?435590",
+                                                            "value": 0.061375
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "f__Rikenellaceae__171550",
+                                    "children": [
+                                        {
+                                            "name": "g__Alistipes__239759",
+                                            "children": [
+                                                {
+                                                    "name": "s__Alistipes sp. AL-1__1499682",
+                                                    "children": [
+                                                        {
+                                                            "name": "Alistipes sp. AL-1?species?1499682",
+                                                            "value": 0.017155
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Alistipes shahii__328814",
+                                                    "children": [
+                                                        {
+                                                            "name": "Alistipes shahii WAL 8301?strain?717959",
+                                                            "value": 0.049864
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Alistipes indistinctus__626932",
+                                                    "children": [
+                                                        {
+                                                            "name": "Alistipes indistinctus YIT 12060?strain?742725",
+                                                            "value": 0.001359
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Alistipes finegoldii__214856",
+                                                    "children": [
+                                                        {
+                                                            "name": "Alistipes finegoldii DSM 17242?strain?679935",
+                                                            "value": 0.003543
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Alistipes putredinis__28117",
+                                                    "children": [
+                                                        {
+                                                            "name": "Alistipes putredinis DSM 17216?strain?445970",
+                                                            "value": 0.126513
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "f__Tannerellaceae__2005525",
+                                    "children": [
+                                        {
+                                            "name": "g__Parabacteroides__375288",
+                                            "children": [
+                                                {
+                                                    "name": "s__Parabacteroides sp. CT06__2025876",
+                                                    "children": [
+                                                        {
+                                                            "name": "Parabacteroides sp. CT06?species?2025876",
+                                                            "value": 0.012327
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Parabacteroides gordonii__574930",
+                                                    "children": [
+                                                        {
+                                                            "name": "Parabacteroides gordonii MS-1 = DSM 23371?strain?1203610",
+                                                            "value": 0.004338
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Parabacteroides timonensis__1871013",
+                                                    "children": [
+                                                        {
+                                                            "name": "Parabacteroides timonensis?species?1871013",
+                                                            "value": 0.001336
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Parabacteroides merdae__46503",
+                                                    "children": [
+                                                        {
+                                                            "name": "Parabacteroides merdae?species?46503",
+                                                            "value": 0.002299
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "f__Odoribacteraceae__1853231",
+                                    "children": [
+                                        {
+                                            "name": "g__Butyricimonas__574697",
+                                            "children": [
+                                                {
+                                                    "name": "s__Butyricimonas virosa__544645",
+                                                    "children": [
+                                                        {
+                                                            "name": "Butyricimonas virosa DSM 23226?strain?1121130",
+                                                            "value": 0.003243
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "g__Odoribacter__283168",
+                                            "children": [
+                                                {
+                                                    "name": "s__Odoribacter splanchnicus__28118",
+                                                    "children": [
+                                                        {
+                                                            "name": "Odoribacter splanchnicus DSM 20712?strain?709991",
+                                                            "value": 0.017288
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "f__Prevotellaceae__171552",
+                                    "children": [
+                                        {
+                                            "name": "g__Prevotella__838",
+                                            "children": [
+                                                {
+                                                    "name": "s__Prevotella multiformis__282402",
+                                                    "children": [
+                                                        {
+                                                            "name": "Prevotella multiformis DSM 16608?strain?888743",
+                                                            "value": 0.001729
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "p__Bacillota__1239",
+            "children": [
+                {
+                    "name": "c__Clostridia__186801",
+                    "children": [
+                        {
+                            "name": "o__Eubacteriales__186802",
+                            "children": [
+                                {
+                                    "name": "f__Oscillospiraceae__216572",
+                                    "children": [
+                                        {
+                                            "name": "g__Faecalibacterium__216851",
+                                            "children": [
+                                                {
+                                                    "name": "s__Faecalibacterium prausnitzii__853",
+                                                    "children": [
+                                                        {
+                                                            "name": "Faecalibacterium prausnitzii M21/2?strain?411485",
+                                                            "value": 0.056666
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Faecalibacterium sp. OM04-11BH__2292357",
+                                                    "children": [
+                                                        {
+                                                            "name": "Faecalibacterium sp. OM04-11BH?species?2292357",
+                                                            "value": 0.036075
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Faecalibacterium?genus?216851",
+                                                    "value": 0.008044
+                                                },
+                                                {
+                                                    "name": "s__Faecalibacterium duncaniae__411483",
+                                                    "children": [
+                                                        {
+                                                            "name": "Faecalibacterium duncaniae?species?411483",
+                                                            "value": 0.043943
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "g__Flavonifractor__946234",
+                                            "children": [
+                                                {
+                                                    "name": "s__Flavonifractor plautii__292800",
+                                                    "children": [
+                                                        {
+                                                            "name": "Flavonifractor plautii?species?292800",
+                                                            "value": 0.001249
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "g__Ruminococcus__1263",
+                                            "children": [
+                                                {
+                                                    "name": "s__Ruminococcus sp. AM41-2AC__2293214",
+                                                    "children": [
+                                                        {
+                                                            "name": "Ruminococcus sp. AM41-2AC?species?2293214",
+                                                            "value": 0.001191
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "f__Butyricicoccaceae__3085642",
+                                    "children": [
+                                        {
+                                            "name": "g__Agathobaculum__2048137",
+                                            "children": [
+                                                {
+                                                    "name": "s__Agathobaculum butyriciproducens__1628085",
+                                                    "children": [
+                                                        {
+                                                            "name": "Agathobaculum butyriciproducens?species?1628085",
+                                                            "value": 0.003403
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "g__Intestinimonas__1392389",
+                                    "children": [
+                                        {
+                                            "name": "s__Intestinimonas butyriciproducens__1297617",
+                                            "children": [
+                                                {
+                                                    "name": "Intestinimonas butyriciproducens?species?1297617",
+                                                    "value": 0.002132
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "f__Clostridiaceae__31979",
+                                    "children": [
+                                        {
+                                            "name": "g__Clostridium__1485",
+                                            "children": [
+                                                {
+                                                    "name": "s__Clostridium sp. VE202-10__1232450",
+                                                    "children": [
+                                                        {
+                                                            "name": "Clostridium sp. VE202-10?species?1232450",
+                                                            "value": 0.00353
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "o__Lachnospirales__3085636",
+                            "children": [
+                                {
+                                    "name": "f__Lachnospiraceae__186803",
+                                    "children": [
+                                        {
+                                            "name": "s__Lachnospiraceae bacterium TM07-2AC__2302966",
+                                            "children": [
+                                                {
+                                                    "name": "Lachnospiraceae bacterium TM07-2AC?species?2302966",
+                                                    "value": 0.006539
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Lachnospiraceae?family?186803",
+                                            "value": 0.006049
+                                        },
+                                        {
+                                            "name": "g__Mediterraneibacter__2316020",
+                                            "children": [
+                                                {
+                                                    "name": "s__Mediterraneibacter gnavus__33038",
+                                                    "children": [
+                                                        {
+                                                            "name": "Mediterraneibacter gnavus ATCC 29149?strain?411470",
+                                                            "value": 0.00687
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__[Ruminococcus] lactaris__46228",
+                                                    "children": [
+                                                        {
+                                                            "name": "[Ruminococcus] lactaris ATCC 29176?strain?471875",
+                                                            "value": 0.015775
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__[Ruminococcus] torques__33039",
+                                                    "children": [
+                                                        {
+                                                            "name": "[Ruminococcus] torques ATCC 27756?strain?411460",
+                                                            "value": 0.006244
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "g__Roseburia__841",
+                                            "children": [
+                                                {
+                                                    "name": "s__Roseburia inulinivorans__360807",
+                                                    "children": [
+                                                        {
+                                                            "name": "Roseburia inulinivorans DSM 16841?strain?622312",
+                                                            "value": 0.012519
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "g__Blautia__572511",
+                                            "children": [
+                                                {
+                                                    "name": "s__Blautia massiliensis__1737424",
+                                                    "children": [
+                                                        {
+                                                            "name": "Blautia massiliensis?species?1737424",
+                                                            "value": 0.002918
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "g__Dorea__189330",
+                                            "children": [
+                                                {
+                                                    "name": "s__Dorea longicatena__88431",
+                                                    "children": [
+                                                        {
+                                                            "name": "Dorea longicatena AGR2136?strain?1280698",
+                                                            "value": 0.001173
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "g__Enterocloster__2719313",
+                                            "children": [
+                                                {
+                                                    "name": "s__Enterocloster bolteae__208479",
+                                                    "children": [
+                                                        {
+                                                            "name": "Enterocloster bolteae ATCC BAA-613?strain?411902",
+                                                            "value": 0.007446
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Enterocloster aldenensis__358742",
+                                                    "children": [
+                                                        {
+                                                            "name": "Enterocloster aldenensis?species?358742",
+                                                            "value": 0.000813
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "f__Anaerotignaceae__3118652",
+                                    "children": [
+                                        {
+                                            "name": "g__Anaerotignum__2039240",
+                                            "children": [
+                                                {
+                                                    "name": "s__Anaerotignum faecicola__2358141",
+                                                    "children": [
+                                                        {
+                                                            "name": "Anaerotignum faecicola?species?2358141",
+                                                            "value": 0.009622
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "o__Peptostreptococcales__3082720",
+                            "children": [
+                                {
+                                    "name": "f__Anaerovoracaceae__3030910",
+                                    "children": [
+                                        {
+                                            "name": "g__Mogibacterium__86331",
+                                            "children": [
+                                                {
+                                                    "name": "Mogibacterium?genus?86331",
+                                                    "value": 0.000851
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "s__Firmicutes bacterium OM04-13BH__2292901",
+                    "children": [
+                        {
+                            "name": "Firmicutes bacterium OM04-13BH?species?2292901",
+                            "value": 0.002989
+                        }
+                    ]
+                },
+                {
+                    "name": "s__Firmicutes bacterium AM10-47__2292890",
+                    "children": [
+                        {
+                            "name": "Firmicutes bacterium AM10-47?species?2292890",
+                            "value": 0.001966
+                        }
+                    ]
+                },
+                {
+                    "name": "Bacillota?phylum?1239",
+                    "value": 0.000915
+                },
+                {
+                    "name": "c__Negativicutes__909932",
+                    "children": [
+                        {
+                            "name": "o__Veillonellales__1843489",
+                            "children": [
+                                {
+                                    "name": "f__Veillonellaceae__31977",
+                                    "children": [
+                                        {
+                                            "name": "g__Veillonella__29465",
+                                            "children": [
+                                                {
+                                                    "name": "s__Veillonella sp. S13054-11__2027458",
+                                                    "children": [
+                                                        {
+                                                            "name": "Veillonella sp. S13054-11?species?2027458",
+                                                            "value": 0.008704
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Veillonella dispar__39778",
+                                                    "children": [
+                                                        {
+                                                            "name": "Veillonella dispar DORA_11?strain?1403949",
+                                                            "value": 0.006421
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Veillonella parvula__29466",
+                                                    "children": [
+                                                        {
+                                                            "name": "Veillonella parvula ACS-068-V-Sch12?strain?768727",
+                                                            "value": 0.007941
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Veillonella?genus?29465",
+                                                    "value": 0.00304
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "g__Dialister__39948",
+                                            "children": [
+                                                {
+                                                    "name": "s__Dialister invisus__218538",
+                                                    "children": [
+                                                        {
+                                                            "name": "Dialister invisus DSM 15470?strain?592028",
+                                                            "value": 0.004623
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Dialister pneumosintes__39950",
+                                                    "children": [
+                                                        {
+                                                            "name": "Dialister pneumosintes?species?39950",
+                                                            "value": 0.000756
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "g__Megasphaera__906",
+                                            "children": [
+                                                {
+                                                    "name": "s__Megasphaera micronuciformis__187326",
+                                                    "children": [
+                                                        {
+                                                            "name": "Megasphaera micronuciformis F0359?strain?706434",
+                                                            "value": 0.001905
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "g__Anaeroglobus__156454",
+                                            "children": [
+                                                {
+                                                    "name": "s__Anaeroglobus geminatus__156456",
+                                                    "children": [
+                                                        {
+                                                            "name": "Anaeroglobus geminatus F0357?strain?861450",
+                                                            "value": 0.008157
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "o__Acidaminococcales__1843488",
+                            "children": [
+                                {
+                                    "name": "f__Acidaminococcaceae__909930",
+                                    "children": [
+                                        {
+                                            "name": "g__Phascolarctobacterium__33024",
+                                            "children": [
+                                                {
+                                                    "name": "s__Phascolarctobacterium faecium__33025",
+                                                    "children": [
+                                                        {
+                                                            "name": "Phascolarctobacterium faecium?species?33025",
+                                                            "value": 0.002335
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "c__Bacilli__91061",
+                    "children": [
+                        {
+                            "name": "o__Lactobacillales__186826",
+                            "children": [
+                                {
+                                    "name": "f__Streptococcaceae__1300",
+                                    "children": [
+                                        {
+                                            "name": "g__Streptococcus__1301",
+                                            "children": [
+                                                {
+                                                    "name": "s__Streptococcus parasanguinis__1318",
+                                                    "children": [
+                                                        {
+                                                            "name": "Streptococcus parasanguinis ATCC 15912?strain?760570",
+                                                            "value": 0.012038
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Streptococcus periodonticum__2490633",
+                                                    "children": [
+                                                        {
+                                                            "name": "Streptococcus periodonticum?species?2490633",
+                                                            "value": 0.001523
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Streptococcus?genus?1301",
+                                                    "value": 0.000955
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "f__Lactobacillaceae__33958",
+                                    "children": [
+                                        {
+                                            "name": "g__Weissella__46255",
+                                            "children": [
+                                                {
+                                                    "name": "s__Weissella confusa__1583",
+                                                    "children": [
+                                                        {
+                                                            "name": "Weissella confusa LBAE C39-2?strain?1127131",
+                                                            "value": 0.00163
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "p__Actinomycetota__201174",
+            "children": [
+                {
+                    "name": "c__Coriobacteriia__84998",
+                    "children": [
+                        {
+                            "name": "o__Coriobacteriales__84999",
+                            "children": [
+                                {
+                                    "name": "f__Atopobiaceae__1643824",
+                                    "children": [
+                                        {
+                                            "name": "g__Lancefieldella__2767353",
+                                            "children": [
+                                                {
+                                                    "name": "s__Lancefieldella rimae__1383",
+                                                    "children": [
+                                                        {
+                                                            "name": "Lancefieldella rimae ATCC 49626?strain?553184",
+                                                            "value": 0.002487
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "c__Actinomycetes__1760",
+                    "children": [
+                        {
+                            "name": "o__Micrococcales__85006",
+                            "children": [
+                                {
+                                    "name": "f__Micrococcaceae__1268",
+                                    "children": [
+                                        {
+                                            "name": "g__Rothia__32207",
+                                            "children": [
+                                                {
+                                                    "name": "Rothia?genus?32207",
+                                                    "value": 0.001496
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "o__Bifidobacteriales__85004",
+                            "children": [
+                                {
+                                    "name": "f__Bifidobacteriaceae__31953",
+                                    "children": [
+                                        {
+                                            "name": "g__Alloscardovia__419014",
+                                            "children": [
+                                                {
+                                                    "name": "Alloscardovia?genus?419014",
+                                                    "value": 0.001175
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "p__Pseudomonadota__1224",
+            "children": [
+                {
+                    "name": "c__Gammaproteobacteria__1236",
+                    "children": [
+                        {
+                            "name": "o__Enterobacterales__91347",
+                            "children": [
+                                {
+                                    "name": "f__Enterobacteriaceae__543",
+                                    "children": [
+                                        {
+                                            "name": "g__Enterobacter__547",
+                                            "children": [
+                                                {
+                                                    "name": "Enterobacter?genus?547",
+                                                    "value": 0.00498
+                                                },
+                                                {
+                                                    "name": "s__Enterobacter hormaechei__158836",
+                                                    "children": [
+                                                        {
+                                                            "name": "Enterobacter hormaechei?species?158836",
+                                                            "value": 0.00372
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "g__Citrobacter__544",
+                                            "children": [
+                                                {
+                                                    "name": "s__Citrobacter freundii__546",
+                                                    "children": [
+                                                        {
+                                                            "name": "Citrobacter freundii?species?546",
+                                                            "value": 0.015135
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Enterobacteriaceae?family?543",
+                                            "value": 0.001903
+                                        },
+                                        {
+                                            "name": "g__Klebsiella__570",
+                                            "children": [
+                                                {
+                                                    "name": "Klebsiella?genus?570",
+                                                    "value": 0.0024
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Enterobacterales?order?91347",
+                                    "value": 0.000761
+                                }
+                            ]
+                        },
+                        {
+                            "name": "o__Pasteurellales__135625",
+                            "children": [
+                                {
+                                    "name": "f__Pasteurellaceae__712",
+                                    "children": [
+                                        {
+                                            "name": "g__Haemophilus__724",
+                                            "children": [
+                                                {
+                                                    "name": "s__Haemophilus parainfluenzae__729",
+                                                    "children": [
+                                                        {
+                                                            "name": "Haemophilus parainfluenzae ATCC 33392?strain?888828",
+                                                            "value": 0.002545
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "c__Betaproteobacteria__28216",
+                    "children": [
+                        {
+                            "name": "o__Burkholderiales__80840",
+                            "children": [
+                                {
+                                    "name": "f__Comamonadaceae__80864",
+                                    "children": [
+                                        {
+                                            "name": "g__Comamonas__283",
+                                            "children": [
+                                                {
+                                                    "name": "s__Comamonas kerstersii__225992",
+                                                    "children": [
+                                                        {
+                                                            "name": "Comamonas kerstersii?species?225992",
+                                                            "value": 0.010121
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "p__Thermodesulfobacteriota__200940",
+            "children": [
+                {
+                    "name": "c__Desulfovibrionia__3031449",
+                    "children": [
+                        {
+                            "name": "o__Desulfovibrionales__213115",
+                            "children": [
+                                {
+                                    "name": "f__Desulfovibrionaceae__194924",
+                                    "children": [
+                                        {
+                                            "name": "g__Bilophila__35832",
+                                            "children": [
+                                                {
+                                                    "name": "s__Bilophila wadsworthia__35833",
+                                                    "children": [
+                                                        {
+                                                            "name": "Bilophila wadsworthia 3_1_6?strain?563192",
+                                                            "value": 0.00923
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "g__Desulfovibrio__872",
+                                            "children": [
+                                                {
+                                                    "name": "s__Desulfovibrio piger__901",
+                                                    "children": [
+                                                        {
+                                                            "name": "Desulfovibrio piger ATCC 29098?strain?411464",
+                                                            "value": 0.00253
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "p__Synergistota__508458",
+            "children": [
+                {
+                    "name": "c__Synergistia__649775",
+                    "children": [
+                        {
+                            "name": "o__Synergistales__649776",
+                            "children": [
+                                {
+                                    "name": "f__Dethiosulfovibrionaceae__3029088",
+                                    "children": [
+                                        {
+                                            "name": "g__Pyramidobacter__638847",
+                                            "children": [
+                                                {
+                                                    "name": "s__Pyramidobacter piscolens__638849",
+                                                    "children": [
+                                                        {
+                                                            "name": "Pyramidobacter piscolens W5455?strain?352165",
+                                                            "value": 0.019602
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "s__Pyramidobacter porci__2605789",
+                                                    "children": [
+                                                        {
+                                                            "name": "Pyramidobacter porci?species?2605789",
+                                                            "value": 0.001814
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
