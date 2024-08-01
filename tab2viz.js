@@ -16,79 +16,279 @@ class Tab2Viz{
         this.tab2Boolean = tab2Boolean
     }
 
-
     renderLegend(){
+        // console.log('here')
         let svg = d3.select(".dynamic-div-x" ).append("svg")
                     .attr("width", 2960)
-                    .attr("height", 410)
+                    .attr("height", 430)
 
         svg.append("text")
             .attr("x", 0)
             .attr("y", 50)
             .attr("font-size", "58")
             .attr("fill", "Black")
-            .text("Indicator Organisms Heatmap")
+            .text("All Organisms Heatmap")
 
         svg.append("text")
-            .attr("x", 612)
+            .attr("x", 542)
             .attr("y", 120)
             .attr("font-size", "38")
             .attr("fill", "Black")
             .attr("text-anchor", "end")
-            .text(("Low Abundance Indicator Organism"))
+            .text(("Low Abundance of Organism"))
+
+        const gradient = svg.append("defs")
+            .append("linearGradient")
+            .attr("id", "gradient")
+            .attr("x1", "0%")
+            .attr("y1", "0%")
+            .attr("x2", "100%")
+            .attr("y2", "0%");
+
+        gradient.append("stop")
+            .attr("offset", "0%")
+            .attr("stop-color", "#0200b9")
+            .attr("stop-opacity", 1);
+
+        gradient.append("stop")
+                .attr("offset", "100%")
+                .attr("stop-color", "#00fff3")
+                .attr("stop-opacity", 1);
 
         // Append a rectangle to the SVG container and apply the gradient
         svg.append("rect")
-            .attr("x", 622)    // x position of the rectangle
+            .attr("x", 552)    // x position of the rectangle
             .attr("y", 90)    // y position of the rectangle
             .attr("width", 400) // width of the rectangle
             .attr("height", 30) // height of the rectangle
-            .attr("fill", "blue") // fill color of the rectangle using the gradient
+            .attr("fill", "url(#gradient)") // fill color of the rectangle using the gradient
             .attr("stroke", "black")
             .attr("stroke-width", "1")
 
+        svg.append("text")
+        .attr("x", 552)
+        .attr("y", 150)
+        .attr("font-size", "38")
+        .attr("fill", "Black")
+        .text("0")
 
         svg.append("text")
-            .attr("x", 612)
-            .attr("y", 160)
+        .attr("x", 952)
+        .attr("y", 150)
+        .attr("font-size", "38")
+        .attr("fill", "Black")
+        .attr("text-anchor", "end")
+        .text((this.sliderMin).toFixed(0))
+
+        svg.append("text")
+            .attr("x", 542)
+            .attr("y", 190)
             .attr("font-size", "38")
             .attr("fill", "Black")
             .attr("text-anchor", "end")
-            .text("High Abundance Indicator Organism")
+            .text(("Normal Abundance of Organism"))
 
         // Append a rectangle to the SVG container and apply the gradient
         svg.append("rect")
-            .attr("x", 622)    // x position of the rectangle
-            .attr("y", 130)    // y position of the rectangle
+            .attr("x", 552)    // x position of the rectangle
+            .attr("y", 160)    // y position of the rectangle
             .attr("width", 400) // width of the rectangle
             .attr("height", 30) // height of the rectangle
-            .attr("fill", "red") // fill color of the rectangle using the gradient
+            .attr("fill", "purple") // fill color of the rectangle using the gradient
             .attr("stroke", "black")
             .attr("stroke-width", "1")
 
-
         svg.append("text")
-            .attr("x", 612)
-            .attr("y", 200)
+            .attr("x", 552)
+            .attr("y", 220)
+            .attr("font-size", "38")
+            .attr("fill", "Black")
+            .text((this.sliderMin).toFixed(0))
+    
+        svg.append("text")
+            .attr("x", 952)
+            .attr("y", 220)
             .attr("font-size", "38")
             .attr("fill", "Black")
             .attr("text-anchor", "end")
-            .text("Non-Indicator Organism")
+            .text((this.sliderMax).toFixed(0))
+
+        svg.append("text")
+            .attr("x", 542)
+            .attr("y", 260)
+            .attr("font-size", "38")
+            .attr("fill", "Black")
+            .attr("text-anchor", "end")
+            .text(("High Abundance of Organism"))
+
+        const gradient2 = svg.append("defs")
+            .append("linearGradient")
+            .attr("id", "gradient2")
+            .attr("x1", "0%")
+            .attr("y1", "0%")
+            .attr("x2", "100%")
+            .attr("y2", "0%");
+
+        gradient2.append("stop")
+            .attr("offset", "0%")
+            .attr("stop-color", "#ff0000")
+            .attr("stop-opacity", 1);
+
+        gradient2.append("stop")
+                .attr("offset", "100%")
+                .attr("stop-color", "#7b0000")
+                .attr("stop-opacity", 1);
 
         // Append a rectangle to the SVG container and apply the gradient
         svg.append("rect")
-            .attr("x", 622)    // x position of the rectangle
-            .attr("y", 170)    // y position of the rectangle
+            .attr("x", 552)    // x position of the rectangle
+            .attr("y", 230)    // y position of the rectangle
             .attr("width", 400) // width of the rectangle
             .attr("height", 30) // height of the rectangle
-            .attr("fill", "white") // fill color of the rectangle using the gradient
+            .attr("fill", "url(#gradient2)") // fill color of the rectangle using the gradient
             .attr("stroke", "black")
             .attr("stroke-width", "1")
+
+        svg.append("text")
+            .attr("x", 552)
+            .attr("y", 290)
+            .attr("font-size", "38")
+            .attr("fill", "Black")
+            .text((this.sliderMax).toFixed(0))
+    
+        svg.append("text")
+            .attr("x", 952)
+            .attr("y", 290)
+            .attr("font-size", "38")
+            .attr("fill", "Black")
+            .attr("text-anchor", "end")
+            .text("100")
+
+        svg.append("text")
+            .attr("x", 542)
+            .attr("y", 330)
+            .attr("font-size", "38")
+            .attr("fill", "Black")
+            .attr("text-anchor", "end")
+            .text("Low Abundance of LIO")
+
+        const gradient3 = svg.append("defs")
+            .append("linearGradient")
+            .attr("id", "gradient3")
+            .attr("x1", "0%")
+            .attr("y1", "0%")
+            .attr("x2", "100%")
+            .attr("y2", "0%");
+
+        gradient3.append("stop")
+            .attr("offset", "0%")
+            .attr("stop-color", "#654321")
+            .attr("stop-opacity", 1);
+
+        gradient3.append("stop")
+                .attr("offset", "100%")
+                .attr("stop-color", "#d2691e")
+                .attr("stop-opacity", 1);
+            
+        svg.append("rect")
+            .attr("x", 552)    // x position of the rectangle
+            .attr("y", 300)    // y position of the rectangle
+            .attr("width", 400) // width of the rectangle
+            .attr("height", 30) // height of the rectangle
+            .attr("fill", "url(#gradient3)") // fill color of the rectangle using the gradient
+            .attr("stroke", "black")
+            .attr("stroke-width", "1")
+
+        svg.append("text")
+            .attr("x", 972)
+            .attr("y", 330)
+            .attr("font-size", "38")
+            .attr("fill", "Black")
+            .attr("text-anchor", "start")
+            .text("High Abundance of LIO; LIO = Low-Indicator Organism")
+        
+        
+        svg.append("text")
+            .attr("x", 552)
+            .attr("y", 360)
+            .attr("font-size", "38")
+            .attr("fill", "Black")
+            .text("0")
+
+
+        svg.append("text")
+            .attr("x", 952)
+            .attr("y", 360)
+            .attr("font-size", "38")
+            .attr("fill", "Black")
+            .attr("text-anchor", "end")
+            .text("100")
 
         
 
         svg.append("text")
-            .attr("x", 1047)
+            .attr("x", 542)
+            .attr("y", 400)
+            .attr("font-size", "38")
+            .attr("fill", "Black")
+            .attr("text-anchor", "end")
+            .text("Low Abundance of HIO")
+
+        const gradient4 = svg.append("defs")
+            .append("linearGradient")
+            .attr("id", "gradient4")
+            .attr("x1", "0%")
+            .attr("y1", "0%")
+            .attr("x2", "100%")
+            .attr("y2", "0%");
+
+        gradient4.append("stop")
+            .attr("offset", "0%")
+            .attr("stop-color", "#E0FFE0")
+            .attr("stop-opacity", 1);
+
+        gradient4.append("stop")
+                .attr("offset", "100%")
+                .attr("stop-color", "#003300")
+                .attr("stop-opacity", 1);
+            
+        svg.append("rect")
+            .attr("x", 552)    // x position of the rectangle
+            .attr("y", 370)    // y position of the rectangle
+            .attr("width", 400) // width of the rectangle
+            .attr("height", 30) // height of the rectangle
+            .attr("fill", "url(#gradient4)") // fill color of the rectangle using the gradient
+            .attr("stroke", "black")
+            .attr("stroke-width", "1")
+
+        svg.append("text")
+            .attr("x", 972)
+            .attr("y", 400)
+            .attr("font-size", "38")
+            .attr("fill", "Black")
+            .attr("text-anchor", "start")
+            .text("High Abundance of HIO; HIO = High-Indicator Organism")
+
+        
+        svg.append("text")
+            .attr("x", 552)
+            .attr("y", 430)
+            .attr("font-size", "38")
+            .attr("fill", "Black")
+            .text("0")
+
+
+        svg.append("text")
+            .attr("x", 952)
+            .attr("y", 430)
+            .attr("font-size", "38")
+            .attr("fill", "Black")
+            .attr("text-anchor", "end")
+            .text("100")
+
+
+        svg.append("text")
+            .attr("x", 1027)
             .attr("y", 120)
             .attr("font-size", "38")
             .attr("fill", "Black")
@@ -97,20 +297,20 @@ class Tab2Viz{
 
 
         svg.append("circle")
-            .attr("cx", 1362)    // x position of the rectangle
+            .attr("cx", 1342)    // x position of the rectangle
             .attr("cy", 105)    // y position of the rectangle
             .attr("r", 20) // width of the rectangle
             .attr("fill", "black") 
 
         svg.append("text")
-            .attr("x", 1392)
+            .attr("x", 1372)
             .attr("y", 120)
             .attr("font-size", "38")
             .attr("fill", "Black")
             .text("Current Root")
         
         svg.append("text")
-            .attr("x", 1047)
+            .attr("x", 1027)
             .attr("y", 170)
             .attr("font-size", "38")
             .attr("fill", "Black")
@@ -118,26 +318,25 @@ class Tab2Viz{
             .text("Click on any node in graph to make that node root.")
 
         let renderVal = Tab2Viz.Tab2VizRootName.split('__')
+        // console.log(renderVal)
         svg.append("text")
-            .attr("x", 1047)
+            .attr("x", 1027)
             .attr("y", 220)
             .attr("font-size", "38")
             .attr("fill", "Black")
             .text("Current Root = " + renderVal[1] + "[" + nameMapping(renderVal[0]) + "]")
 
-
         svg.append("text")
-            .attr("x", 1047)
+            .attr("x", 1027)
             .attr("y", 270)
             .attr("font-size", "38")
             .attr("fill", "Black")
             .text("Bacteria needs to be the root of the hierarchy for the checkboxes functionality to be used.")
     }
 
-
     handleMouseOver(event, fileIndex, p, nodeName, cdfContainerData, transformedData, transformedData2, transformedData3) {
 
-        console.log("FileIndex: ", fileIndex)
+        // console.log("FileIndex: ", fileIndex)
 
         const hoveredPathId = "path-" + p.data.name + '-' + fileIndex
         // console.log(hoveredPathId)
@@ -357,10 +556,11 @@ class Tab2Viz{
     fillDropDown(){
         const div = document.getElementById('selectedContainer-T2');
         const buttons = div.querySelectorAll('button');
-        console.log('A:', buttons.length);
+        // console.log('A:', buttons.length);
 
 
         if (buttons.length === 0 || this.tab2Boolean === 'new'){
+            // console.log("I'm here")
             let diseaseNames = ["Resistant Starch", "Iron", "Vitamin D", "Omega-3 Fatty Acids", "Intermittent Fasting"]//this.structureData[2].map(item => item.Name);
             // console.log('A:', diseaseNames)
             const selectBox = document.getElementById('selectBox-T2');
@@ -382,8 +582,14 @@ class Tab2Viz{
                         selectedValues.splice(index, 1);
                         updateSelectedContainer();
                         Tab2Viz.Tab2SelectedButtons = selectedValues
+
+                        if (selectedValues.length === 0){
+                            Tab2Viz.Tab2VizRootName = 'sk__Bacteria__2'
+                        }
                         removeVizDivs();
                         renderVizDivs(selectedValues.length, 'tab2');
+
+                        
                         // console.log('A: ', selectedValues)
                         that.render(selectedValues);
                     });
@@ -445,7 +651,10 @@ class Tab2Viz{
             updateSelectedContainer();
         }
         else{
+            // console.log("I'm here2")
             removeVizDivs();
+
+            // console.log('A:', Tab2Viz.Tab2SelectedButtons.length)
             renderVizDivs(Tab2Viz.Tab2SelectedButtons.length, 'tab2');
             this.render(Tab2Viz.Tab2SelectedButtons);
         }
@@ -484,7 +693,7 @@ class Tab2Viz{
 
     transformObject2(obj) {
         const transformedObjects = [];
-        console.log(obj.Name)
+        // console.log(obj.Name)
         Object.keys(obj).forEach((key, index) => {
             if (index > 1) {
                 let value = obj[key];
@@ -550,7 +759,7 @@ class Tab2Viz{
 
     
     render(diseaseName){
-        console.log(diseaseName)
+        // console.log(diseaseName)
         // console.log(this.structureData)
 
         let sliderMin = this.sliderMin/100
@@ -630,7 +839,7 @@ class Tab2Viz{
 
         transformedData3 = resultArray
 
-        console.log(transformedData3)
+        // console.log(transformedData3)
 
 
 
@@ -638,7 +847,7 @@ class Tab2Viz{
         let selectedOptionsArray = this.transformArray(this.selectedOptions)
 
         let selectedDataArray = this.transformArray2(this.structureData)
-        console.log(selectedDataArray)
+        // console.log(selectedDataArray)
         
 
         for (let i = 0; i < this.classNames.length; i++) {
@@ -704,7 +913,7 @@ class Tab2Viz{
             
 
             
-            if (Tab1Viz.Tab1VizRootName !== 'sk__Bacteria__2'){
+            if (Tab2Viz.Tab2VizRootName !== 'sk__Bacteria__2'){
                 disableCheckboxes()
             }
             else{
@@ -714,7 +923,7 @@ class Tab2Viz{
 
             // if (this.rootName !== 'sk__Bacteria__2'){
             // console.log(data)
-            data = findChildByName(data, Tab1Viz.Tab1VizRootName)
+            data = findChildByName(data, Tab2Viz.Tab2VizRootName)
             // console.log(data)
 
 
@@ -790,14 +999,12 @@ class Tab2Viz{
                         .range(["#ff0000", "#7b0000"]);
 
             let indicatorLow = d3.scaleLinear()
-                        .domain([0, 0.0001, 0.001, 0.01, 0.1, 0.3, 1])
-                        .range(["#FFFFE0", "#FFFFCC", "#FFFF99", "#FFFF66", "#FFFF33", "#FFCC00", "#FFFF00"]);
+                        .domain([0, 1])
+                        .range(["#654321", "#d2691e"]);
             
             let indicatorHigh = d3.scaleLinear()
-                        .domain([0, 0.0001, 0.001, 0.01, 0.1, 0.3, 1])
-                        .range(["#E0FFE0", "#C8FFC8", "#A0FFA0", "#78FF78", "#50FF50", "#28FF28","#003300"]);
-
-
+                        .domain([0, 1])
+                        .range(["#E0FFE0", "#003300"]);
 
 
             // that = this
@@ -864,7 +1071,7 @@ class Tab2Viz{
                             myWeight = findTaxonWeightbyName(transformedData2, taxonName)
                         } 
 
-                        if (myWeight === null){
+                        if (myWeight === null || myWeight === '0.0' || myWeight === '-0.0'){
                             return "white"
                         }
                         else{
@@ -878,16 +1085,49 @@ class Tab2Viz{
                                 cdf = 0
                             }
 
+
+                            // if (cdf < 0){
+                            //     return colorScaleLow(0)
+                            // }
+                            // else if (cdf >= 0 && cdf < sliderMin){
+                            //     if (sliderMin === 0){
+                            //         return "purple"
+                            //     }
+                            //     else{
+                            //         return colorScaleLow(cdf)
+                            //     }
+                            // }
+                            // else if (cdf >= sliderMax && cdf <= 1){
+                            //     // console.log('A:', cdf)
+                            //     if (sliderMax === 1){
+                            //         return "purple"
+                            //     }
+                            //     else{
+                            //         return colorScaleHigh(cdf)
+                            //     }
+                            // }
+                            // else if (cdf > 1){
+                            //     return colorScaleHigh(1)
+                            // }
+                            // else{
+                            //     return "purple"
+                            // }
+                            // if (myWeight > 0){
+                            //     let value = cdf * myWeight
+                            //     // console.log('A: ', value)
+                            //     return indicatorHigh(value)
+                            // }
+                            // else{
+                            //     // console.log('here2')
+                            //     let value = Math.abs((1-cdf) * myWeight)
+                            //     // console.log('B: ', value)
+                            //     return indicatorLow(value)
+                            // }
                             if (myWeight > 0){
-                                let value = cdf * myWeight
-                                // console.log('A: ', value)
-                                return indicatorHigh(value)
+                                return indicatorHigh(cdf)
                             }
                             else{
-                                // console.log('here2')
-                                let value = Math.abs((1-cdf) * myWeight)
-                                // console.log('B: ', value)
-                                return indicatorLow(value)
+                                return indicatorLow(cdf)
                             }
                         }
                     }
@@ -1000,7 +1240,7 @@ class Tab2Viz{
                             myWeight = findTaxonWeightbyName(transformedData2, taxonName)
                         } 
 
-                        if (myWeight === null){
+                        if (myWeight === null || myWeight === '0.0' || myWeight === '-0.0'){
                             return "white"
                         }
                         else{
@@ -1032,18 +1272,49 @@ class Tab2Viz{
                             // }
 
                             
-
+                            // if (cdf < 0){
+                            //     return colorScaleLow(0)
+                            // }
+                            // else if (cdf >= 0 && cdf < sliderMin){
+                            //     if (sliderMin === 0){
+                            //         return "purple"
+                            //     }
+                            //     else{
+                            //         return colorScaleLow(cdf)
+                            //     }
+                            // }
+                            // else if (cdf >= sliderMax && cdf <= 1){
+                            //     // console.log('A:', cdf)
+                            //     if (sliderMax === 1){
+                            //         return "purple"
+                            //     }
+                            //     else{
+                            //         return colorScaleHigh(cdf)
+                            //     }
+                            // }
+                            // else if (cdf > 1){
+                            //     return colorScaleHigh(1)
+                            // }
+                            // else{
+                            //     return "purple"
+                            // }
+                            // if (myWeight > 0){
+                            //     let value = cdf * myWeight
+                            //     console.log(indicatorHigh(value))
+                            //     return indicatorHigh(value)
+                            // }
+                            // else{
+                            //     let value = Math.abs((1-cdf) * myWeight)
+                            //     // if (taxonName === 'Oscillospiraceae'){
+                            //     //     console.log("value:", value)
+                            //     // }
+                            //     return indicatorLow(value)
+                            // }
                             if (myWeight > 0){
-                                let value = cdf * myWeight
-                                console.log(indicatorHigh(value))
-                                return indicatorHigh(value)
+                                return indicatorHigh(cdf)
                             }
                             else{
-                                let value = Math.abs((1-cdf) * myWeight)
-                                // if (taxonName === 'Oscillospiraceae'){
-                                //     console.log("value:", value)
-                                // }
-                                return indicatorLow(value)
+                                return indicatorLow(cdf)
                             }
                         }
                     }
@@ -1081,7 +1352,7 @@ class Tab2Viz{
                             myWeight = findTaxonWeightbyName(transformedData2, taxonName)
                         } 
 
-                        if (myWeight === null){
+                        if (myWeight === null || myWeight === '0.0' || myWeight === '-0.0'){
                             return "grey"
                         }
                         else{
@@ -1125,7 +1396,7 @@ class Tab2Viz{
                             myWeight = findTaxonWeightbyName(transformedData2, taxonName)
                         } 
 
-                        if (myWeight === null){
+                        if (myWeight === null || myWeight === '0.0' || myWeight === '-0.0'){
                             return "grey"
                         }
                         else{
@@ -1166,7 +1437,7 @@ class Tab2Viz{
                             myWeight = findTaxonWeightbyName(transformedData2, taxonName)
                         } 
 
-                        if (myWeight === null){
+                        if (myWeight === null || myWeight === '0.0' || myWeight === '-0.0'){
                             return "0.1"
                         }
                         else{
@@ -1210,7 +1481,7 @@ class Tab2Viz{
                             myWeight = findTaxonWeightbyName(transformedData2, taxonName)
                         } 
 
-                        if (myWeight === null){
+                        if (myWeight === null || myWeight === '0.0' || myWeight === '-0.0'){
                             return "0.1"
                         }
                         else{
@@ -1251,7 +1522,7 @@ class Tab2Viz{
                             myWeight = findTaxonWeightbyName(transformedData2, taxonName)
                         } 
 
-                        if (myWeight === null){
+                        if (myWeight === null || myWeight === '0.0' || myWeight === '-0.0'){
                             return "0.2"
                         }
                         else{
@@ -1295,44 +1566,44 @@ class Tab2Viz{
                             myWeight = findTaxonWeightbyName(transformedData2, taxonName)
                         } 
 
-                        if (myWeight === null){
+                        if (myWeight === null || myWeight === '0.0' || myWeight === '-0.0'){
                             return "0.2"
                         }
                         else{
                             let myWeight2 = findTaxonWeightbyName(transformedData3, taxonName)
                             if (myWeight2 !== null){
-                                return "3"
+                                return "5"
                             }
-                            return "5"
+                            return "3"
                         }
                     }
                 })
-                // .on("click", function(event, p){
-                //     // console.log('Y: ', p.children)
+                .on("click", function(event, p){
+                    // console.log('Y: ', p.children)
 
-                //     let found = 0
-                //     let myArr = p.children
-                //     for (let i = 0; i < myArr.length; i++) {
-                //         if (myArr[i].hasOwnProperty('children')) {
-                //             found = 1
-                //             break
-                //         }
-                //     } 
-                //     if (found = 1){
+                    let found = 0
+                    let myArr = p.children
+                    for (let i = 0; i < myArr.length; i++) {
+                        if (myArr[i].hasOwnProperty('children')) {
+                            found = 1
+                            break
+                        }
+                    } 
+                    if (found = 1){
 
-                //         // console.log('here')
-                //         Tab1Viz.Tab1VizRootName = p.data.name
-                //         // console.log('X:', Tab1Viz.Tab1VizRootName)
-                //         // disableCheckboxes()
-                //         that.selectedRemovals = []
-                //         removeVizDivs()
-                //         renderVizDivs(that.selectedOptions.length, 'tab1')
-                //         removeLegendDivs()
-                //         renderLegendDivs()
-                //         that.renderLegend()
-                //         that.render()
-                //     }
-                // })
+                        // console.log('here')
+                        Tab2Viz.Tab2VizRootName = p.data.name
+                        // console.log('X:', Tab1Viz.Tab1VizRootName)
+                        // disableCheckboxes()
+                        that.selectedRemovals = []
+                        removeVizDivs()
+                        renderVizDivs(that.selectedOptions.length, 'tab2')
+                        removeLegendDivs()
+                        renderLegendDivs()
+                        that.renderLegend()
+                        that.render(diseaseName)
+                    }
+                })
                 .on("mouseover", function (event, d){
                     let nodeName = d.data.name
                     that.handleMouseOver(event, i+2, d, nodeName, that.structureData[3], transformedData, transformedData2, transformedData3)
@@ -1346,51 +1617,51 @@ class Tab2Viz{
                 element.attr("original-stroke-width", element.style("stroke-width"));
             });
             
-            // let circle = svg.append("circle")
-            //     .attr("cx", 0) // x-coordinate of the center
-            //     .attr("cy", 0) // y-coordinate of the center
-            //     .attr("r", 30)   // radius of the circle
-            //     .attr("fill", "black") // fill color of the circle
-            //     .on("click", function(event, p){
-            //         // console.log('B:', unChangingData)
-            //         console.log('D:', Tab1Viz.Tab1VizRootName)
-            //         if (Tab1Viz.Tab1VizRootName !== undefined){
-            //             if (Tab1Viz.Tab1VizRootName === 'sk__Bacteria__2'){
-            //                 that.selectedRemovals = []
-            //                 enableCheckboxes2()
-            //                 removeVizDivs()
-            //                 renderVizDivs(that.selectedOptions.length, 'tab1')
-            //                 removeLegendDivs()
-            //                 renderLegendDivs()
-            //                 that.renderLegend()
-            //                 that.render()
-            //             }
-            //             else{
-            //                 console.log('A:', Tab1Viz.Tab1VizData[i+2])
-            //                 console.log('B;', Tab1Viz.Tab1VizRootName)
-            //                 let parent = findParentByName(Tab1Viz.Tab1VizData[0], Tab1Viz.Tab1VizRootName);
-            //                 console.log('E: ', parent.name)
-            //                 Tab1Viz.Tab1VizRootName = parent.name
-            //                 removeVizDivs()
-            //                 renderVizDivs(that.selectedOptions.length, 'tab1')
-            //                 removeLegendDivs()
-            //                 renderLegendDivs()
-            //                 that.renderLegend()
-            //                 that.render()
-            //                 // clicked(parent.name, sliderMin*100, sliderMax*100, indicatorValue)
-            //             } 
-            //         }
-            //     })
-            //     .append("title")
-            //     .text(function(){
-            //         if (Tab1Viz.Tab1VizRootName === undefined){
-            //             return "Root = bacteria\n Rank = Kingdom\n NCBI Taxon ID = 2"
-            //         }
-            //         else{
-            //             let myNames = Tab1Viz.Tab1VizRootName.split('__')
-            //             return "Root = " + myNames[1] + "\n Rank = " + nameMapping(myNames[0]) + "\n NCBI Taxon ID = " + myNames[2]
-            //         }
-            //     })
+            let circle = svg.append("circle")
+                .attr("cx", 0) // x-coordinate of the center
+                .attr("cy", 0) // y-coordinate of the center
+                .attr("r", 30)   // radius of the circle
+                .attr("fill", "black") // fill color of the circle
+                .on("click", function(event, p){
+                    // console.log('B:', unChangingData)
+                    // console.log('D:', Tab2Viz.Tab2VizRootName)
+                    if (Tab2Viz.Tab2VizRootName !== undefined){
+                        if (Tab2Viz.Tab2VizRootName === 'sk__Bacteria__2'){
+                            that.selectedRemovals = []
+                            enableCheckboxes2()
+                            removeVizDivs()
+                            renderVizDivs(that.selectedOptions.length, 'tab2')
+                            removeLegendDivs()
+                            renderLegendDivs()
+                            that.renderLegend()
+                            that.render(diseaseName)
+                        }
+                        else{
+                            // console.log('A:', Tab2Viz.Tab1VizData[i+2])
+                            // console.log('B;', Tab2Viz.Tab1VizRootName)
+                            let parent = findParentByName(Tab2Viz.Tab2VizData[0], Tab2Viz.Tab2VizRootName);
+                            // console.log('E: ', parent.name)
+                            Tab2Viz.Tab2VizRootName = parent.name
+                            removeVizDivs()
+                            renderVizDivs(that.selectedOptions.length, 'tab2')
+                            removeLegendDivs()
+                            renderLegendDivs()
+                            that.renderLegend()
+                            that.render(diseaseName)
+                            // clicked(parent.name, sliderMin*100, sliderMax*100, indicatorValue)
+                        } 
+                    }
+                })
+                .append("title")
+                .text(function(){
+                    if (Tab2Viz.Tab2VizRootName === undefined){
+                        return "Root = bacteria\n Rank = Kingdom\n NCBI Taxon ID = 2"
+                    }
+                    else{
+                        let myNames = Tab2Viz.Tab2VizRootName.split('__')
+                        return "Root = " + myNames[1] + "\n Rank = " + nameMapping(myNames[0]) + "\n NCBI Taxon ID = " + myNames[2]
+                    }
+                })
             
         }
     }

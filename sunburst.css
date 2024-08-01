@@ -345,10 +345,10 @@ select {
 
 #allDivs {
     position: fixed;
-    top: 400px; /* Fixed top position */
+    top: 600px; /* Fixed top position */
     left: 800px; /* Fixed left position */
     width: 100%; /* Set width */
-    height: 3500px; /* Set height */
+    height: 3800px; /* Set height */
     overflow: auto;  /* Enable scrolling */
     position: relative; /* Make this the reference point for children */
 }
@@ -366,7 +366,7 @@ select {
     top: 450px; /* Fixed top position */
     left: 1300px; /* Fixed left position */
     width: 3000px; /* Set width */
-    height: 440px; /* Set height */
+    height: 460px; /* Set height */
     overflow: auto; /* Enable scrolling if content overflows */
 }
 

@@ -3,9 +3,9 @@ function getSelectedOptions() {
     const selectedOptions = Array.from(selectElement.selectedOptions).map(option => option.value);
     // console.log(selectedOptions)
     if (selectedOptions.length === 0){
-        // removeCheckBoxes()
+        removeCheckBoxes()
         removeLegendDivs()
-        // removeT1Slider()
+        removeT1Slider()
         removeT2Dropdown()
         // removeT3Dropdown()
         // removeT4Dropdown()
@@ -17,8 +17,8 @@ function getSelectedOptions() {
         alert('Select at least one sample')
     }
     else{
-        // removeCheckBoxes()
-        // renderCheckboxes(selectedOptions) 
+        removeCheckBoxes()
+        renderCheckboxes(selectedOptions) 
         removeLegendDivs()
         renderLegendDivs()
 
@@ -33,8 +33,8 @@ function getSelectedOptions() {
         }
 
         if (activeTabID === 'tab1'){
-            // removeT1Slider()
-            // renderT1Slider(selectedOptions)
+            removeT1Slider()
+            renderT1Slider(selectedOptions)
             removeT2Dropdown()
             // removeT3Dropdown()
             // removeT4Dropdown()
@@ -43,7 +43,7 @@ function getSelectedOptions() {
             // removeT7Dropdown()
         }
         if (activeTabID === 'tab2'){
-            // removeT1Slider()
+            removeT1Slider()
             removeT2Dropdown()
             renderT2Dropdown()
             // removeT3Dropdown()
@@ -52,7 +52,7 @@ function getSelectedOptions() {
             // removeT6Slider()
             // removeT7Dropdown()
         }
-
+        
         removeVizDivs()
         renderVizDivs(selectedOptions.length, activeTabID)
 
@@ -108,8 +108,8 @@ function renderTabs(selectedOptions, activeTabID){
     
                 let tabValue = clickedTab.attr('data-tab')
                 if (tabValue === 'tab1'){
-                    // removeT1Slider()
-                    // renderT1Slider(selectedOptions)
+                    removeT1Slider()
+                    renderT1Slider(selectedOptions)
                     // //depopulate T2dropdown here
                     removeT2Dropdown()
                     // removeT3Dropdown()
@@ -117,8 +117,8 @@ function renderTabs(selectedOptions, activeTabID){
                     // removeT5Slider()
                     // removeT6Slider()
                     // removeT7Dropdown()
-                    // removeCheckBoxes()
-                    // renderCheckboxes(selectedOptions)
+                    removeCheckBoxes()
+                    renderCheckboxes(selectedOptions)
                     removeLegendDivs()
                     renderLegendDivs()
                     removeVizDivs()
@@ -127,7 +127,7 @@ function renderTabs(selectedOptions, activeTabID){
                     sunburst.getData(selectedOptions, 'tab1')
                 }
                 else if (tabValue === 'tab2'){
-                    // removeT1Slider()
+                    removeT1Slider()
                     // //depopulate T2dropdown here
                     removeT2Dropdown()
                     renderT2Dropdown()
@@ -136,8 +136,8 @@ function renderTabs(selectedOptions, activeTabID){
                     // removeT5Slider()
                     // removeT6Slider()
                     // removeT7Dropdown()
-                    // removeCheckBoxes()
-                    // renderCheckboxes(selectedOptions)
+                    removeCheckBoxes()
+                    renderCheckboxes(selectedOptions)
                     removeLegendDivs()
                     renderLegendDivs()
                     removeVizDivs()
@@ -719,7 +719,7 @@ function checkboxClicked() {
     const selectedOptions = Array.from(selectElement.selectedOptions).map(option => option.value);
     let activeTab = document.querySelector('.tab.active');
 
-    if (activeTab.textContent === 'All Organisms Heatmap -- Sunburst -- Sample Dependent'){
+    if (activeTab.textContent === 'Analysis'){
         let circle1 = document.getElementById('circle1');
         let cxValue1 = parseFloat(circle1.getAttribute('cx'))
         let circle2 = document.getElementById('circle2');
@@ -731,13 +731,13 @@ function checkboxClicked() {
     
         cxValue1 = (((cxValue1 - linex1)/(linex2 - linex1)) * 100).toFixed(2)
         cxValue2 = (((cxValue2 - linex1)/(linex2 - linex1)) * 100).toFixed(2)
-        console.log('A:', typeof cxValue1)
-        console.log('B:', typeof cxValue2)
-        console.log(cxValue1)
-        console.log(cxValue2)
+        // console.log('A:', typeof cxValue1)
+        // console.log('B:', typeof cxValue2)
+        // console.log(cxValue1)
+        // console.log(cxValue2)
 
         let arr = [1, 2, 3, 4, 5, 6, 7];
-        let toRemove = []//findCheckedStatus()
+        let toRemove = findCheckedStatus()
         let removalPositions = removeAndMap(arr, toRemove)
         // console.log(removalPositions);
           
@@ -748,15 +748,18 @@ function checkboxClicked() {
         let sunburst = new Sunburst(Number(cxValue1), Number(cxValue2), 'tab1', "sk__Bacteria__2", selectedOptions, removalPositions)
         sunburst.getData(selectedOptions, 'tab1')
     }
-    else if (activeTab.textContent === 'Indicator Organisms for Diseases Heatmap -- Sunburst -- Sample Dependent'){
+    else if (activeTab.textContent === 'Actions'){
+        // console.log('here')
         removeLegendDivs()
         renderLegendDivs()
         removeVizDivs()
+
+        
         renderVizDivs(selectedOptions.length, 'tab2')
         let arr = [1, 2, 3, 4, 5, 6, 7];
-        let toRemove = []//findCheckedStatus()
+        let toRemove = findCheckedStatus()
         let removalPositions = removeAndMap(arr, toRemove)
-        let sunburst = new Sunburst(35, 65, 'tab2', "sk__Bacteria__2", selectedOptions, removalPositions , 'new')
+        let sunburst = new Sunburst(35, 65, 'tab2', "sk__Bacteria__2", selectedOptions, removalPositions , 'old')
         sunburst.getData(selectedOptions, 'tab2')
     }
 }
@@ -841,7 +844,8 @@ function removeVizDivs(){
 
 
 function renderVizDivs(numberOfDivs, currentTab){
-    // console.log('abcdefgh')
+    // console.log('---------------------')
+    // console.log('Divs: ', numberOfDivs)
     let container = document.getElementById('allDivs');
     let x = 0
     let y = 0
@@ -849,7 +853,12 @@ function renderVizDivs(numberOfDivs, currentTab){
         numberOfDivs = 3
     }
     if (currentTab === 'tab2'){
-        numberOfDivs = 6
+        if (numberOfDivs >= 1){
+            numberOfDivs = 6
+        }
+        else{
+            numberOfDivs = 0
+        }
     }
 
     for (let i = 0; i < numberOfDivs; i++) {
